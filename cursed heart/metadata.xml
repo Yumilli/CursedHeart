@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <name>Cursed Heart</name>
+    <directory>cursed heart</directory>
+    <id>3247335995</id>
+    <description>Cursed Heart
+Quality: 4
+Cost: Two Red Hearts
+Item Pools: Devil Room and Ultra Secret Room
+Transformation: Leviathan
++1 Damage
+x2.5 Fire rate multiplier
++1 Black Heart
+You take double damage
+Homing tears
+- Additional copies grant +2.5 Damage
+- Unique demon appearance
+
+Future updates are welcome
+Github download for Epic Games, GOG, Cracked, etc
+https://github.com/Yumilli/CursedHeart</description>
+    <version>1.5</version>
+    <visibility>Public</visibility>
+    <tag id="Lua"/>
+    <tag id="Items"/>
+    <tag id="Graphics"/>
+</metadata>

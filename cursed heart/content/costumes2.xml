@@ -1,0 +1,3 @@
+<costumes anm2root="gfx/characters/">
+    <costume id="0" anm2path="cursed_heart_item.anm2" type="passive" priority="20" skinColor="1" overwriteColor="true"/>
+</costumes>

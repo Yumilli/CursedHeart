@@ -1,0 +1,5 @@
+<ItemPools>
+	<Pool Name="devil"><Item Name="Cursed Heart" Weight="1" DecreaseBy="1" RemoveOn="0.1"/></Pool>
+	<Pool Name="greedDevil"><Item Name="Cursed Heart" Weight="1" DecreaseBy="1" RemoveOn="0.1"/></Pool>
+	<Pool Name="ultraSecret"><Item Name="Cursed Heart" Weight="1" DecreaseBy="1" RemoveOn="0.1"/></Pool>
+</ItemPools>
