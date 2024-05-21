@@ -9,7 +9,7 @@ Cost: Two Red Hearts
 Item Pools: Devil Room and Ultra Secret Room
 Transformation: Leviathan
 +1 Damage
-x2.5 Fire rate multiplier
+x2 Fire rate multiplier
 +1 Black Heart
 You take double damage
 Homing tears
@@ -19,7 +19,7 @@ Homing tears
 Future updates are welcome
 Github download for Epic Games, GOG, Cracked, etc
 https://github.com/Yumilli/CursedHeart</description>
-    <version>1.5</version>
+    <version>1.6</version>
     <visibility>Public</visibility>
     <tag id="Lua"/>
     <tag id="Items"/>
