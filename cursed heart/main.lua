@@ -1,10 +1,10 @@
 local mod = RegisterMod("Cursed Heart", 1)
 local item = Isaac.GetItemIdByName("Cursed Heart")
 
-if EID then EID:addCollectible(item, "#↑ +1 Damage#↑ x2 Fire rate multiplier#{{BlackHeart}} +2 Black Hearts#{{BrokenHeart}} You take double damage# Homing tears") end
+if EID then EID:addCollectible(item, "#↑ +1 Damage#↑ x2.3 Fire rate multiplier#{{BlackHeart}} +2 Black Hearts#{{BrokenHeart}} You take double damage# Homing tears") end
 
 local val = {0, 0}
-local stats = {1, .4}
+local stats = {1, .3217}
 local extracop = {2.5, 0}
 function mod:stats(entity, cf)
     local player = entity:ToPlayer()
