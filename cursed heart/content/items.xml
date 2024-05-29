@@ -1,3 +1,3 @@
 <items gfxroot="gfx/items/" deathanm2="gfx/death_items.anm2" version="1">
-    <passive devilprice="2" tags="devil" blackhearts="4" name="Cursed Heart" description="Is it worth the cost?" gfx="cursed_heart_item.png" quality="4" id="0" cache="damage maxfiredelay tearcolor tearflag"/>
+    <passive devilprice="2" tags="devil" blackhearts="4" name="Cursed Heart" description="Is it worth the cost?" gfx="cursed_heart_item.png" quality="4" id="0" cache="damage firedelay tearcolor tearflag"/>
 </items>

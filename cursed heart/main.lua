@@ -6,10 +6,10 @@ if EID then EID:addCollectible(item, "#↑ +1 Damage#↑ x2.3 Fire rate multipli
 local val = {0, 0}
 local stats = {1, .3217}
 local extracop = {2.5, 0}
-function mod:stats(entity, cf)
+function mod:stats(entity)
     local player = entity:ToPlayer()
     local itemnum = player:GetCollectibleNum(item)
-    if player:HasCollectible(item) and (cf == CacheFlag.CACHE_DAMAGE or cf == CacheFlag.CACHE_FIREDELAY or cf == CacheFlag.CACHE_TEARCOLOR or cf == CacheFlag.CACHE_TEARFLAG) then
+    if player:HasCollectible(item) then
         player.TearColor = Color(1.5, 0, 0) player.LaserColor = Color(1.5, 0, 0)
         player.TearFlags = player.TearFlags | TearFlags.TEAR_HOMING
         if val[1] ~= player.Damage - stats[1] + extracop[1] * (itemnum - 1) then
