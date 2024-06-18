@@ -3,22 +3,20 @@ local item = Isaac.GetItemIdByName("Cursed Heart")
 
 if EID then EID:addCollectible(item, "#↑ +0.5 Damage#↑ x2.3 Fire rate multiplier#{{BlackHeart}} +2 Black Hearts#{{BrokenHeart}} You take double damage# Homing tears") end
 
-local val = {0, 0}
 local stats = {0.5, .3217}
 local extracop = {2.5, 0}
-function mod:stats(entity)
+function mod:stats(entity, cacheflag)
     local player = entity:ToPlayer()
-    local itemnum = player:GetCollectibleNum(item)
     if player:HasCollectible(item) then
-        player.TearColor = Color(1.5, 0, 0) player.LaserColor = Color(1.5, 0, 0)
-        player.TearFlags = player.TearFlags | TearFlags.TEAR_HOMING
-        if val[1] ~= player.Damage - stats[1] + extracop[1] * (itemnum - 1) then
-            player.Damage = player.Damage + stats[1] + extracop[1] * (itemnum - 1)
-            val[1] = player.Damage - stats[1] + extracop[1] * (itemnum - 1)
-        end
-        if val[2] ~= player.MaxFireDelay / stats[2] then
+        local itemnum = player:GetCollectibleNum(item) - 1
+        if cacheflag == CacheFlag.CACHE_DAMAGE then
+            player.Damage = player.Damage + stats[1] + extracop[1] * itemnum
+        elseif cacheflag == CacheFlag.CACHE_FIREDELAY then
             player.MaxFireDelay = player.MaxFireDelay * stats[2]
-            val[2] = player.MaxFireDelay / stats[2]
+        elseif cacheflag == CacheFlag.CACHE_TEARCOLOR then
+            player.TearColor = Color(1.5, 0, 0) player.LaserColor = Color(1.5, 0, 0)
+        elseif cacheflag == CacheFlag.CACHE_TEARFLAG then
+            player.TearFlags = player.TearFlags | TearFlags.TEAR_HOMING
         end
     end
 end
